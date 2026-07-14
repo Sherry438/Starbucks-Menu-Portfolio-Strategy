@@ -22,7 +22,13 @@ The **objective** is not only to identify top-selling beverages, but also to det
 - How marketing resources should be allocated across product categories
 - How external factors, such as weather and macroeconomic conditions, influence product performance
 
-To answer these questions, this project builds an integrated analytical dataset by combining Starbucks menu information, transaction records, weather observations, and macroeconomic indicators. Because Starbucks proprietary POS data is not publicly available, synthetic transaction data generated under real-world business constraints is used as a **realistic analytical proxy**.
+Starbucks proprietary point-of-sale (POS) transaction data is not publicly available. Therefore, this project constructs a business-ready analytical dataset using four complementary public datasets:
+- Starbucks menu data
+- Synthetic transaction records
+- Historical weather
+- Macroeconomic indicators
+
+The synthetic dataset is intended to provide a realistic environment for business analytics and portfolio strategy development rather than to reproduce Starbucks' internal operational data.
 
 ## 2. Data Architecture: 
 ///////draft/example
