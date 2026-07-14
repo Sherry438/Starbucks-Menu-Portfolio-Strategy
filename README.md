@@ -30,57 +30,63 @@ Starbucks proprietary point-of-sale (POS) transaction data is not publicly avail
 
 The synthetic dataset is intended to provide a realistic environment for business analytics and portfolio strategy development rather than to reproduce Starbucks' internal operational data.
 
-## 2. Data Architecture: 
-///////draft/example
+## 2. Data Architecture
 
+```
 Starbucks Menu
-        │
-        │ product_name
-        ▼
+      │
+      │ product_name
+      ▼
 Transactions
-        │
-        │ city + date
-        ▼
+      │
+      │ city + date
+      ▼
 Weather
-        │
-        │ month
-        ▼
+      │
+      │ month
+      ▼
 FRED Macro
-        │
-        ▼
+      │
+      ▼
 Master Analytical Dataset
+```
 
-## 3. Methodology: 简述你的分析流程（EDA -> SQL 统计 -> BCG 矩阵分析 -> 营销预算模拟）。
-///////draft/example
+## 3. Methodology
 
-Business Understanding
+```
+00 Business Understanding
+        ↓
+01 Data Audit
+        ↓
+02 Data Integration
+        ↓
+03 Data Cleaning
+        ↓
+04 Exploratory Data Analysis
+        ↓
+05 SQL Business Analytics
+        ↓
+06 Portfolio Strategy
+        ↓
+07 Executive Report
+```
 
-↓
+## 4. Project Structure
 
-Data Integration
+```
+├── data/
+│   ├── raw/            # Starbucks menu, synthetic transactions, weather, FRED macro
+│   ├── external/        # External reference data
+│   └── processed/       # Cleaned / integrated analytical datasets
+├── notebooks/            # 00-07, one per methodology stage (see above)
+├── sql/                  # Schema definitions and business analysis queries
+├── docs/
+│   └── data_dictionary.md  # Column-level definitions for all raw tables
+├── dashboard/             # Interactive dashboard assets
+├── reports/               # Exported reports / executive deliverables
+└── src/                   # Reusable Python modules
+```
 
-↓
+## 5. Business Insights / Recommendations
 
-Data Cleaning
-
-↓
-
-Exploratory Data Analysis
-
-↓
-
-SQL Business Analytics
-
-↓
-
-Portfolio Analysis
-
-↓
-
-Business Simulation
-
-↓
-
-Executive Recommendations
-
-## 4. Business Insights / Recommendations: 亮出你的核心结论（比如：调高 Coffee 预算至 40%，因为 Margin 最高）。
+_To be added once the portfolio analysis and business simulation stages are complete._
