@@ -32,28 +32,28 @@ All column names used in this project are defined here.
 
 ## Transaction
 
-| Column | Type | Meaning | Table |
-|---|---|---|---|
-| `transaction_id` | string | Unique transaction identifier (e.g. TXN-000001) | Transaction |
-| `date` | date | Transaction date (YYYY-MM-DD) | Transaction |
-| `hour` | int | Hour of day the purchase occurred (0–23) | Transaction |
+| Column | Type | Meaning                                                                      | Table |
+|---|---|------------------------------------------------------------------------------|---|
+| `transaction_id` | string | Unique transaction identifier (e.g. TXN-000001)                              | Transaction |
+| `date` | date | Transaction date (YYYY-MM-DD)                                                | Transaction |
+| `hour` | int | Hour of day the purchase occurred (0–23)                                     | Transaction |
 | `time_slot` | string | Named time-of-day bucket (morning_rush / late_morning / afternoon / evening) | Transaction |
-| `city` | string | City where the transaction took place | Transaction |
-| `persona` | string | Customer segment label (e.g. morning_commuter, student) | Transaction |
-| `is_weekend` | int | 1 = Saturday or Sunday, 0 = weekday | Transaction |
-| `temp_f` | float | Outdoor temperature in °F at time of purchase | Transaction |
-| `cpi` | float | CPI value for the month of the transaction (joined from Macro) | Transaction |
-| `category` | string | Product category of the purchased item | Transaction |
-| `product_name` | string | Beverage name purchased | Transaction |
-| `size` | string | Serving size purchased (Short / Tall / Grande / Venti) | Transaction |
-| `base_price` | float | Base menu price before customizations (USD) | Transaction |
-| `customizations` | string | Description of add-ons/modifications; "none" if none | Transaction |
-| `n_customizations` | int | Number of customizations applied | Transaction |
-| `upcharge` | float | Additional charge for customizations (USD) | Transaction |
-| `total_price` | float | Final amount paid by customer (base_price + upcharge) in USD | Transaction |
-| `calories` | int | Caloric content of the purchased item (kcal) | Transaction |
-| `sugar_g` | float | Sugar content of the purchased item in grams | Transaction |
-| `caffeine_mg` | float | Caffeine content of the purchased item in milligrams | Transaction |
+| `city` | string | City where the transaction took place                                        | Transaction |
+| `persona` | string | Customer segment label (e.g. morning_commuter, student)                      | Transaction |
+| `is_weekend` | int | 1 = weekend, 0 = weekday                                                     | Transaction |
+| `temp_f` | float | Outdoor temperature in °F at time of purchase                                | Transaction |
+| `cpi` | float | CPI value for the month of the transaction (joined from Macro)               | Transaction |
+| `category` | string | Product category of the purchased item                                       | Transaction |
+| `product_name` | string | Beverage name purchased                                                      | Transaction |
+| `size` | string | Serving size purchased (Short / Tall / Grande / Venti)                       | Transaction |
+| `base_price` | float | Base menu price before customizations (USD)                                  | Transaction |
+| `customizations` | string | Description of add-ons/modifications; "none" if none                         | Transaction |
+| `n_customizations` | int | Number of customizations applied                                             | Transaction |
+| `upcharge` | float | Additional charge for customizations (USD)                                   | Transaction |
+| `total_price` | float | Final amount paid by customer (base_price + upcharge) in USD                 | Transaction |
+| `calories` | int | Caloric content of the purchased item (kcal)                                 | Transaction |
+| `sugar_g` | float | Sugar content of the purchased item in grams                                 | Transaction |
+| `caffeine_mg` | float | Caffeine content of the purchased item in milligrams                         | Transaction |
 
 ---
 
